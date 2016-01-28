@@ -1,1 +1,17 @@
-{{yield}}
+<div id='input' class="test"> 
+	
+{{#each rangeOfQuestions as |input|}}
+
+	<p><strong> Question {{index}} </strong></p>
+	{{#em-form model=none}}
+	    {{em-text property="content" label="Content" placeholder="Enter text for consent form..." rows=4}}
+	    {{em-checkbox property="required" label="Required?"}}
+	{{/em-form}}
+
+{{/each}}
+     
+<button {{action 'add'}}>insert question </button>
+
+</div>
+
+
