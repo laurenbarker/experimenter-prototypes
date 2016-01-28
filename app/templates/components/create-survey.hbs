@@ -1,9 +1,18 @@
 <div id='input' class="test"> 
 
-<button class="btn btn-default" {{action 'add'}}>insert question </button>
+<button class="btn btn-default" {{action 'addQuestion'}}>insert question</button>
+<button class="btn btn-default" {{action 'addDynamicQuestion'}}>insert dynamic question</button>
 	
 {{#each rangeOfQuestions as |index|}}
-	{{ survey-question index=index}}
+	{{#if index}}
+		{{ survey-question index=index}}
+	{{/if}}
+{{/each}}
+
+{{#each rangeOfDynamicQuestions as |index|}}
+	{{#if index}}
+		{{ dynamic-questions index=index}}
+	{{/if}}
 {{/each}}
 
 </div>
