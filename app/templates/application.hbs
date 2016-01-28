@@ -1,7 +1,27 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed"
+      data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{ link-to 'Home' 'index' class="navbar-brand" }}
+    </div>
+
+    <div class="collapse navbar-collapse" id="menu-collapse">
+      <ul class="nav navbar-nav">
+        <li>{{ link-to 'Consent Form' 'consent' }}</li>
+        <li>{{ link-to 'Survey Question' 'question' }}</li>
+        <li>{{ link-to 'Dynamic Survey Question' 'dynamic' }}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <h2 id="title">Check out my Prototypes</h2>
-
-<ul> {{#link-to 'consent'}} Consent Form {{/link-to}}</ul>
-<ul> {{#link-to 'question'}} Survey Question {{/link-to}} </ul>
-<ul> {{#link-to 'dynamic'}} Dynamic Survey Question {{/link-to}} </ul>
-
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>

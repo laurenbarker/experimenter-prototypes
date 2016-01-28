@@ -1,10 +1,11 @@
 <div id='input' class="test"> 
 	
-{{#each rangeOfQuestions as |input|}}
+{{#each rangeOfQuestions as |index|}}
 
 	<p><strong> Question {{index}} </strong></p>
 	{{#em-form model=none}}
-	    {{em-text property="content" label="Content" placeholder="Enter text for consent form..." rows=4}}
+	    {{em-input label="Title" property="title" cid="FID"}} 
+  		{{em-text property="help" label="Help" placeholder="Optional help..." rows=2}}
 	    {{em-checkbox property="required" label="Required?"}}
 	{{/em-form}}
 
