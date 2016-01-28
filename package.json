@@ -36,7 +36,6 @@
     "ember-data": "^2.3.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-rapid-forms": "git+https://github.com/piceaTech/ember-rapid-forms.git#59e55bdcf0e25b68ba606fc939ecf7831a88d33f",
     "ember-resolver": "^2.0.3"
   }
 }
