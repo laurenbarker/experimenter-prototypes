@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('consent');
+  this.route('question');
+  this.route('dynamic');
 });
 
 export default Router;
