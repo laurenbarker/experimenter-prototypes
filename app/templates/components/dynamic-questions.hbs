@@ -1,9 +1,46 @@
-<div id='input' class="test"> 
-
-<button class="btn btn-default" {{action 'add'}}>insert question </button>
-	
-{{#each rangeOfQuestions as |index|}}
-	{{ survey-question index=index}}
-{{/each}}
-
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Question {{ index }}</h3>
+  </div>
+  <div class="panel-body">
+  	<form class="form-inline">
+	  <div class="form-group">
+		<label for="sel1">If the answer to question </label>
+		<select class="form-control" id="sel1">
+		   <option>1</option>
+		   <option>2</option>
+		   <option>3</option>
+		   <option>4</option>
+		 </select>
+		<label for="sel1">equal to </label>
+		<select class="form-control" id="sel2">
+		   <option>A</option>
+		   <option>B</option>
+		   <option>C</option>
+		   <option>D</option>
+		 </select>
+	  </div>
+	</form>
+    <form>
+	  <div class="form-group">
+	    <label for="inputTitle">Title</label>
+	    <input type="text" class="form-control" id="inputTitle"
+	      placeholder="Title">
+	  </div>
+	  <div class="form-group">
+	    <label for="inputQuestion">Question</label>
+	    <textarea class="form-control" id="inputQuestion"
+	      placeholder="Question"></textarea>
+	  </div>
+	  <div class="form-group">
+	    <label for="inputHelp">Help</label>
+	    <textarea class="form-control" id="inputHelp"
+	      placeholder="Optional help..."></textarea>
+	  </div>
+	  <div class="form-group">
+	    <label for="required"><input type="checkbox" checked="checked" id="required"> Required</label>
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+  </div>
 </div>

@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('consent');
   this.route('question');
   this.route('dynamic');
+  this.route('create');
 });
 
 export default Router;
