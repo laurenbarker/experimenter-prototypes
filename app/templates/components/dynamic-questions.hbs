@@ -1,11 +1,9 @@
 <div id='input' class="test"> 
 
-<button {{action 'add'}}>insert question </button>
+<button class="btn btn-default" {{action 'add'}}>insert question </button>
 	
 {{#each rangeOfQuestions as |index|}}
-
 	{{ survey-question index=index}}
-
 {{/each}}
 
 </div>
