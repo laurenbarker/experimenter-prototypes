@@ -1,7 +1,6 @@
 # Experimenter-prototypes
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Prototypes for consent form, survey question, and dynamic question components.
 
 ## Prerequisites
 
